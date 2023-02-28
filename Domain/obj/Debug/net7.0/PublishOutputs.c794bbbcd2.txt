@@ -1,0 +1,3 @@
+C:\DevServices\DummyWebApp\Domain.dll
+C:\DevServices\DummyWebApp\Domain.deps.json
+C:\DevServices\DummyWebApp\Domain.pdb

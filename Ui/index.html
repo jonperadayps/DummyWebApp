@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <title>Test Client</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#clickMeButton').on('click', function () {
+                $.ajax({
+                    method: 'POST',
+                    url: 'http://localhost:5120/api/people/create',
+                    accepts: '*/*'
+                }).done(function (data) {
+                    alert('Id: ' + data);
+                });
+            })
+        });
+    </script>
+</head>
+<body>
+<p>Command <input id="clickMeButton" type="button" value="Create Person"/></p>
+</body>
+</html>
